@@ -103,6 +103,10 @@ func (lnt *Linter) Desc() string {
 	return lnt.desc
 }
 
+func (lnt *Linter) Analyzers() []*analysis.Analyzer {
+	return lnt.analyzers
+}
+
 func (lnt *Linter) allAnalyzerNames() []string {
 	var ret []string
 	for _, a := range lnt.analyzers {

@@ -56,6 +56,10 @@ func (ml MetaLinter) getAnalyzers() []*analysis.Analyzer {
 	return allAnalyzers
 }
 
+func (ml MetaLinter) Analyzers() []*analysis.Analyzer {
+	return ml.getAnalyzers()
+}
+
 func (ml MetaLinter) getName() string {
 	return "metalinter"
 }
